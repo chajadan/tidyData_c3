@@ -4,7 +4,7 @@ CodeBook
 To better understand the resulting data set from this script, it is recommended that you read the data descriptions contained in the zip file of the source raw data. The link to that data is in README.md
 
 ## The raw data
-The true data source is from accelerometer and gyroscope sensors in mobile devices. Those datapoints had aggregate characteristics calculated, such as mean and standard deviation, along with various transformations applied to these values, such as noise filters, formulas, and normalization, generated the raw data with which we begin.
+The true data source is from accelerometer and gyroscope sensors in mobile devices. Those datapoints had aggregate characteristics calculated, such as mean and standard deviation, along with various transformations applied to these values, such as noise filters, formulas, and normalization, generated the raw dataset with which we begin.
 
 Overall, there are more than 10,000 observation is the raw data set, with each observation being the recording of one subject's activity, and the activity type they are reported as carrying out.
 
