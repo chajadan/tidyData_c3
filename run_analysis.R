@@ -90,7 +90,7 @@ if (!all(sapply(expectedFiles, file.exists))) {
     
     # append "avg_" tActivityAvgPerUser)[able names
     baseNames <- names(ActivityAvgPerUser)[4:ncol(ActivityAvgPerUser)]
-    names(ActivityAvgPerUser)[4:ncol(ActivityAvgPerUser)] <- paste("avg_", baseNames)
+    names(ActivityAvgPerUser)[4:ncol(ActivityAvgPerUser)] <- paste("avg_", baseNames, sep = "")
     
     # write out the tidy data
     write.table(ActivityAvgPerUser, "tidyData.txt")
