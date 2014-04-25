@@ -10,7 +10,7 @@ Overall, there are more than 10,000 observation is the raw data set, with each o
 
 ## Transformations applied by this script
 
-The raw observations are first grouped by activity and subject, generally resulting in many observations of the same subject for any one given activity. The observations that match in both subject and activity are then column-wise averaged, resulting in a single mean observation in the result tidy data. Since there are 30 subjects and 6 activities, that means that the original 10,000+ observations are boiled down to 180 observations of the mean values for each observation scenario.
+The raw observations are first grouped by activity and subject, generally resulting in many observations of the same subject for any one given activity. The observations that match in both subject and activity are then column-wise averaged, resulting in a single mean observation in the resulting tidy data. Since there are 30 subjects and 6 activities, that means that the original 10,000+ observations are boiled down to 180 observations of the mean values for each observation scenario.
 
 ## The variables
 
