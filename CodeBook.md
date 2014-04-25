@@ -6,7 +6,7 @@ To better understand the resulting data set from this script, it is recommended 
 ## The raw data
 The true data source is from accelerometer and gyroscope sensors in mobile devices. Those datapoints had aggregate characteristics calculated, such as mean and standard deviation, along with various transformations applied to these values, such as noise filters, formulas, and normalization, generated the raw dataset with which we begin.
 
-Overall, there are more than 10,000 observation is the raw data set, with each observation being the recording of one subject's activity, and the activity type they are reported as carrying out.
+Overall, there are more than 10,000 observation is the raw data set, with each observation relating to the recording of one subject's activity, and the activity type they are reported as carrying out.
 
 ## Transformations applied by this script
 
