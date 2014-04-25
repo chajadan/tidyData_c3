@@ -65,3 +65,7 @@ The remaining variables that follow are averages of existing variables decribed 
 * avg_fBodyBodyAccJerkMag-std()
 * avg_fBodyBodyGyroMag-std()
 * avg_fBodyBodyGyroJerkMag-std()
+
+## Further details
+
+For further information about the particulars of how the sounrce data was handling, the low level details, please view the script which has been heavily commented.
