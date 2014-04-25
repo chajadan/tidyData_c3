@@ -16,12 +16,13 @@ The raw observations are first grouped by activity and subject, generally result
 
 Please refer to the original data set for explicit details of how various fields were generated, since as decribed, this script predominantly adds no variables, and merely takes the mean of existing varibles, by the described grouping.
 
-'[X/Y/Z]' is used to denote three separate variables that correspond to the 3-axial signals in the X, Y and Z directions.
-
 * ActivityCode - an integer between 1 and 6 inclusive that has a one to one mapping to the activity name
 * Activity - a text value that serves as the activity name
 * Subject - an integer id between 1 and 30 inclusive, with each distinct id mapping to a distinct subject in the world
-* avg_tBodyAcc-mean()-[X/Y/Z] - the remaining variables are averages of existing variables decribed in the source data set, with "avg_" appended to them
+
+The remaining variables are averages of existing variables decribed in the source data set, with "avg_" appended to them to designate the change made by this script. '[X/Y/Z]' is used to denote three separate variables that correspond to the 3-axial signals in the X, Y and Z directions, which in the original are denoted -XYZ
+
+* avg_tBodyAcc-mean()-[X/Y/Z]
 * avg_tGravityAcc-mean()-[X/Y/Z]
 * avg_tBodyAccJerk-mean()-[X/Y/Z]
 * avg_tBodyGyro-mean()-[X/Y/Z]
@@ -62,33 +63,3 @@ Please refer to the original data set for explicit details of how various fields
 * avg_fBodyBodyAccJerkMag-std()
 * avg_fBodyBodyGyroMag-std()
 * avg_fBodyBodyGyroJerkMag-std()
-
-The set of variables that were estimated from these signals are: 
-
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
-
-Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
-
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
-
-The complete list of variables of each feature vector is available in 'features.txt'
