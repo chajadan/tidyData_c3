@@ -1,7 +1,7 @@
 CodeBook
 =================
 
-To better understand the resulting data set from this script, it is recommended that you read the data description contained in the zip file of the source raw data. The link to that data is in README.md
+To better understand the resulting data set from this script, it is recommended that you read the data descriptions contained in the zip file of the source raw data. The link to that data is in README.md
 
 ## The raw data
 The true data source is from accelerometer and gyroscope sensors in mobile devices. Those datapoints had aggregate characteristics calculated, such as mean and standard deviation, along with various transformations applied to these values, such as noise filters, formulas, and normalization, generated the raw data with which we begin.
