@@ -20,15 +20,17 @@ if (!all(sapply(expectedFiles, file.exists))) {
     subjects <- rbind(train_subjects, test_subjects)
     train_subjects <- NULL
     test_subjects <- NULL
-    names(subjects) <- "Subject"
+    names(subjects) <- "Subject" # name the Subject variable
     
+    # read and append the train and test data
     train_labels <- read.table("train/y_train.txt")
     test_labels <- read.table("test/y_test.txt")
     labels <- rbind(train_labels, test_labels)
     train_labels <- NULL
     test_labels <- NULL
-    names(labels) <- "Activity"
+    names(labels) <- "Activity" # name the Activity variable
     
+    # read and append the train and test data
     train_set <- read.table("train/X_train.txt")
     test_set <- read.table("test/X_test.txt")
     set <- rbind(train_set, test_set)
