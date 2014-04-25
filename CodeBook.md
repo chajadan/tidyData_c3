@@ -16,11 +16,13 @@ The raw observations are first grouped by activity and subject, generally result
 
 Please refer to the original data set for explicit details of how various fields were generated, since as decribed, this script predominantly adds no variables, and merely takes the mean of existing varibles, by the described grouping.
 
+The variables of the resulting tidy data, as represented in order by columns, are:
+
 * ActivityCode - an integer between 1 and 6 inclusive that has a one to one mapping to the activity name
 * Activity - a text value that serves as the activity name
 * Subject - an integer id between 1 and 30 inclusive, with each distinct id mapping to a distinct subject in the world
 
-The remaining variables are averages of existing variables decribed in the source data set, with "avg_" appended to them to designate the change made by this script. '[X/Y/Z]' is used to denote three separate variables that correspond to the 3-axial signals in the X, Y and Z directions, which in the original are denoted -XYZ
+The remaining variables that follow are averages of existing variables decribed in the source data set, with "avg_" appended to them to designate the change made by this script. '[X/Y/Z]' is used to denote three separate variables that correspond to the 3-axial signals in the X, Y and Z directions, which in the original are denoted -XYZ.
 
 * avg_tBodyAcc-mean()-[X/Y/Z]
 * avg_tGravityAcc-mean()-[X/Y/Z]
