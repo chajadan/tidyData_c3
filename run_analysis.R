@@ -88,6 +88,10 @@ if (!all(sapply(expectedFiles, file.exists))) {
     # add levels to the factor, which will cause the column to display the text
     levels(ActivityAvgPerUser[,2]) <- activityLabels[,2]
     
+    # append "avg_" tActivityAvgPerUser)[able names
+    baseNames <- names(ActivityAvgPerUser)[4:ncol(ActivityAvgPerUser)]
+    names(ActivityAvgPerUser)[4:ncol(ActivityAvgPerUser)] <- paste("avg_", baseNames)
+    
     # write out the tidy data
     write.table(ActivityAvgPerUser, "tidyData.txt")
 
